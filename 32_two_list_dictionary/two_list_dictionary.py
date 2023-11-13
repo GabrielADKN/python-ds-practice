@@ -15,3 +15,18 @@ def two_list_dictionary(keys, values):
         >>> two_list_dictionary(['a', 'b', 'c'], [1, 2, 3, 4])
         {'a': 1, 'b': 2, 'c': 3}
    """
+    # create a dictionary
+    # loop through keys and values
+    # if there are more keys than values, add None to the dictionary
+    # if there are more values than keys, ignore the remaining values
+    # return the dictionary
+
+    new_dict = {}
+
+    for i in range(len(keys)):
+        if i < len(values):
+            new_dict[keys[i]] = values[i]
+        else:
+            new_dict[keys[i]] = None
+
+    return new_dict
