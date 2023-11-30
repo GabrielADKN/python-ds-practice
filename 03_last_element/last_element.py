@@ -1,4 +1,7 @@
-def last_element(lst):
+from beartype import beartype
+
+@beartype
+def last_element(lst: list[int]) -> int | None:
     """Return last item in list (None if list is empty.
     
         >>> last_element([1, 2, 3])
